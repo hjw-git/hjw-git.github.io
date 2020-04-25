@@ -796,6 +796,33 @@ public class MyCorsConfig {
     </div>
 
     
+        <link rel="stylesheet" href="/my-blog/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/my-blog/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/my-blog/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: 'ff3639bf7292bba07055',
+        clientSecret: '14acbb856944acca3b2fa5313411aaa7d47f98fa',
+        repo: 'gitalk-comment',
+        owner: 'hjw-git',
+        admin: "hjw-git",
+        id: '2020-04-25T17-41-22',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+
+    
 
     
 
